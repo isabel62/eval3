@@ -9,8 +9,18 @@ class Welcome extends CI_Controller {
 		//$this->load->model('form_model');  
 	}
 
-	public function index()
+	public function validar()
+
 	{
+		$name=$this	->input->post("nombre");
+		$lasname=$this->input->post("apellido");
+		$email=$this->input->post("correo");
+		echo "Nombre:"$name."Apellido."$lastname."Correo";.$email;
+       $data=array(nombre=>$this->input->post("nobre"),
+       	'apellido'=>$this->input->post+("apellido");
+       	'correo'=>$this->input->post("corre");
+       	{  
+
 		$this->load->view('formulario');
 	}
 }
