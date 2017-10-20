@@ -1,20 +1,10 @@
 <?php
 
-defined('Welcome') OR exit('No direct script access allowed');
-
-
-
-  
-
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
-<html lang="$en">
-  echos=$'nombre'>
-
+<html lang="en">
 <head>
-  //validar cambio
 	<meta charset="utf-8">
-
 	<title>Welcome to CodeIgniter</title>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/estilos.css">
@@ -31,11 +21,18 @@ defined('Welcome') OR exit('No direct script access allowed');
       <li class="tab" ><img src="https://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
     </ul>
     
-    <form class="form">
-      <input type="text" placeholder=" apellido" class="apellido1" />
-      <input type="text" placeholder="apellido" class="apellido1" />
-      <input type="text" placeholder="Direccion de Email" class="apellido1" />
-      <input type="text" value='nombre' class="apellido1" />
+    </php>?php echo form_open("Welcome/validar")?>
+
+
+      <input name="text" placeholder="primer nombre" class="textbox" name="nombre1" />
+      <input name="text" placeholder="Apellido" class="textbox" name="Apellido1" />
+      <input name="text" placeholder="Direccion de Email" class="textbox" name="correo"  />
+      <input type="button" value="Next" class="submit"/>
+        
+      <?php echo form_close()?>
+
+
+      -?> />
     </form>
   </div>
 </div>
